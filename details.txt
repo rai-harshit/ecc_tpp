@@ -1,0 +1,32 @@
+Libraries Used : os,tqdm, numpy, random, cv2, tensorflow, tflearn
+Train & Test Image Dimension : 175 x 150 px
+Learning Rate : 0.0001
+No of channels : 1 (Grayscaled Images are used)
+Train Data Size : 30000 Images (15000 Images of Explicit Content and 15000 Images of Non-Explicit Content)
+Test Daata : 5000 Images
+Layers Used : 
+	8 2D Convolution Layers,
+		No. of Convolutional Filters in each 2D Convolution Layer:
+			32
+			32
+			32
+			64
+			64
+			64
+			128
+			128
+		Filter size in each layer : 2 
+	8 2D Max Pooling Layers
+		Filter size in each layer : 2 
+	2 Dropout layers (dropout = 0.2 & 0.5) , 
+	2 Fully Connected Layers,
+	1 Regression Output Layer
+		Optimizer : Adam
+		Loss : Binary Crossentropy
+Activation Function : relu, softmax
+Validation Accuracy : 88.3%
+Loss : 0.55467
+Total Training Steps : 16798
+
+
+
